@@ -1,0 +1,47 @@
+li { list-style-type: square;
+}
+
+#cena {
+    color: red;
+    font-weight: bold;
+}
+
+.wstep {
+    font-style: italic;
+}
+
+td>img {
+    border-style: solid;
+    border-color: blue;
+}
+
+td>img:hover {
+    border-style: solid;
+    border-color: red;
+}
+
+h1~h2 {
+    letter-spacing: 5px;
+}
+
+td[colspan="2"] p {
+    font-size: small;
+}
+
+p~p {
+    color: gray;
+}
+
+body {
+    background-image: url("https://rlv.zcache.com/big_brother_is_watching_poster-re58daa6216744d0dabf337665fd19ed7_wvk_8byvr_307.jpg");
+    background-repeat: repeat-y;
+    background-size: 10%;
+}
+
+h1 {
+    color: blue
+}
+
+h1 {
+    color: green
+}
