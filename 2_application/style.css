@@ -77,6 +77,34 @@ footer {
     font-size: 40px;
 }
 
+#hamburger {
+    display: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+#burger-parent {
+    display: flex;
+    background-color: lightgray;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    border: black solid 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-bar {
+    display: block;
+    width: 33px;
+    height: 4px;
+    background: black;
+    border-radius: 3px;
+    margin: 3px;
+}
+
 article > h3 {
     height: 50px;
     width: 50%;
@@ -115,8 +143,20 @@ footer {
     height: 50px;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 900px) {
     main {
         flex-wrap: wrap;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #site-title {
+        display: none;
+    }
+
+    #hamburger {
+        display: flex;
     }
 }
