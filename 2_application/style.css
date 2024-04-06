@@ -46,3 +46,10 @@ footer {
     margin-left: 15px;
     font-size: 200%;
 }
+
+#menu {
+    flex-grow: 2;
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-end;
+}
