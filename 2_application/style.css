@@ -18,3 +18,24 @@ p {
     margin: 0;
     padding: 0;
 }
+
+header {
+    flex-direction: row;
+    display: flex;
+}
+
+main {
+    flex-direction: row;
+    display: flex;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
