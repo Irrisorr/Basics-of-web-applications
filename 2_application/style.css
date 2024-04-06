@@ -41,3 +41,8 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+#title {
+    margin-left: 15px;
+    font-size: 200%;
+}
