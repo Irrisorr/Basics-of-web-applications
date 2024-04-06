@@ -57,3 +57,19 @@ footer {
 .menu-item {
     width: 75px;
 }
+
+#logo-parent {
+    background-color: lightgray;
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    border: solid black 2px;
+    display: flex;
+}
+
+#logo-text {
+    margin: auto;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
