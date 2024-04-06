@@ -107,3 +107,11 @@ footer {
     flex-direction: column;
     display: flex;
 }
+
+.content {
+    min-height: calc(100vh - 120px);
+  }
+  .footer {
+    height: 50px;
+  }
+
