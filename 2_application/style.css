@@ -35,8 +35,9 @@ main {
 article {
     display: flex;
     flex-direction: column;
-    padding: 15px;
     margin: 15px;
+    width: 100%;
+    border: black solid 2px;
 }
 
 footer {
