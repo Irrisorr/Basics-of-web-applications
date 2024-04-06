@@ -53,3 +53,7 @@ footer {
     display: flex;
     justify-content: flex-end;
 }
+
+.menu-item {
+    width: 75px;
+}
