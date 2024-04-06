@@ -29,12 +29,14 @@ header {
 main {
     flex-direction: row;
     display: flex;
+    margin: 15px;
 }
 
 article {
     display: flex;
     flex-direction: column;
     padding: 15px;
+    margin: 15px;
 }
 
 footer {
