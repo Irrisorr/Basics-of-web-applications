@@ -91,3 +91,8 @@ article > h3 {
     margin-top: 0;
     margin-left: 0;
 }
+
+article > p {
+    padding: 15px;
+    text-align: justify;
+}
