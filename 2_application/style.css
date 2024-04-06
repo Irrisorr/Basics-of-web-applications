@@ -22,6 +22,8 @@ p {
 header {
     flex-direction: row;
     display: flex;
+    padding: 30px;
+    align-items: center;
 }
 
 main {
