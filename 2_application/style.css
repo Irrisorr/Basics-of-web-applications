@@ -113,5 +113,10 @@ footer {
   }
   .footer {
     height: 50px;
-  }
+}
 
+@media all and (max-width: 1200px) {
+    main {
+        flex-wrap: wrap;
+    }
+}
