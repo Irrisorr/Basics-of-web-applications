@@ -1,10 +1,10 @@
 function validate(form) {
-    if (!checkStringAndFocus(form.elements["f_imie"], "Podaj imię!", isWhiteSpaceOrEmpty)) {return false;}
-    if (!checkStringAndFocus(form.elements["f_nazwisko"], "Podaj nazwisko!", isWhiteSpaceOrEmpty)) {return false;}
-    if (!checkStringAndFocus(form.elements["f_email"], "Podaj właściwy e-mail!", isEmailInvalid)) {return false;}
-    if (!checkStringAndFocus(form.elements["f_kod"], "Podaj kod!", isWhiteSpaceOrEmpty)) {return false;}
-    if (!checkStringAndFocus(form.elements["f_ulica"], "Podaj ulicę!", isWhiteSpaceOrEmpty)) {return false;}
-    if (!checkStringAndFocus(form.elements["f_miasto"], "Podaj miasto!", isWhiteSpaceOrEmpty)) {return false;}
+    if (!checkStringAndFocus(form.elements["f_imie"], "Podaj imię!", isWhiteSpaceOrEmpty)) { return false; }
+    if (!checkStringAndFocus(form.elements["f_nazwisko"], "Podaj nazwisko!", isWhiteSpaceOrEmpty)) { return false; }
+    if (!checkStringAndFocus(form.elements["f_email"], "Podaj właściwy e-mail!", isEmailInvalid)) { return false; }
+    if (!checkStringAndFocus(form.elements["f_kod"], "Podaj kod!", isWhiteSpaceOrEmpty)) { return false; }
+    if (!checkStringAndFocus(form.elements["f_ulica"], "Podaj ulicę!", isWhiteSpaceOrEmpty)) { return false; }
+    if (!checkStringAndFocus(form.elements["f_miasto"], "Podaj miasto!", isWhiteSpaceOrEmpty)) { return false; }
     return true;
 }
 
@@ -37,4 +37,12 @@ function isEmailInvalid(str) {
     else {
         return true;
     }
+}
+
+
+function showElement(e) {
+    document.getElementById(e).style.visibility = 'visible';
+}
+function hideElement(e) {
+    document.getElementById(e).style.visibility = 'hidden';
 }
