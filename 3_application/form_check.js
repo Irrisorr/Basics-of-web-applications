@@ -12,3 +12,4 @@ function validate (formularz) {
     }
     return true;
 }
+
