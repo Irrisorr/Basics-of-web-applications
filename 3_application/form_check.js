@@ -4,3 +4,11 @@ function isEmpty(element) {
     }
     return false;
 }
+
+function validate (formularz) {
+    if (isEmpty(formularz.elements["f_imie"].value)) {
+        alert("Podaj imie");
+        return false;
+    }
+    return true;
+}
