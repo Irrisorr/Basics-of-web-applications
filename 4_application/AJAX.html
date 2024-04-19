@@ -19,9 +19,9 @@
         $(function () {
             $('a').click(function () {
                 var thisA = $(this);
-                $('#content').fadeOut('medium', function () {
+                $('#content').animate({ height: '0px', width: '0px' }, function () {
                     $('#content').load('AJAX' + thisA.attr('href'), function () {
-                        $('#content').fadeIn();
+                        $('#content').animate({ height: '500px', width: '500px' });
                     });
                 });
                 return false;
