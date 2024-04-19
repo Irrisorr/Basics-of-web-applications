@@ -21,6 +21,7 @@
             $('button:contains(\'ugina\')').click(function () {
                 $('#toggle').toggleClass('zielona');
                 $('tr:even').addClass('zielona');
+                $('ol.a li:has(.b:has(:not(a)))').addClass('zielona');
             });
         });
     </script>
@@ -40,7 +41,7 @@
         <tr>
             <td>Czwarty</td>
         </tr>
-        <tr>
+        <tr>$('tr:even').addClass('zielona');
             <td>Piąty</td>
         </tr>
         <tr>
