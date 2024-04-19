@@ -18,7 +18,13 @@
     <script type="text/javascript">
         $(function () {
             $('a').click(function () {
-                $('#content').load('AJAX' + $(this).attr('href'));
+                var thisA = $(this);
+                $('#content').fadeOut('medium', function () {
+                    $('#content').load('AJAX' + thisA.attr('href'), function () {
+                        $('#content').fadeIn();
+                    });
+                });
+                return false;
             });
         });
     </script>
