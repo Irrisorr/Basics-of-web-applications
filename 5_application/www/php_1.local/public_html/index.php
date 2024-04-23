@@ -8,10 +8,11 @@
 
 <body>
     <?php
+    require "funkcje.php";
     echo "<h1>Nasz system</h1>";
     if (isset($_POST["signin"])) {
-        echo "<p>Przesłany login: " . $_POST["login"] . "<br>";
-        echo "Przesłane hasło: " . $_POST["password"] . "<br></p>";
+        echo "Przesłany login: " . test_input($_POST["login"]) . "<br>";
+        echo "Przesłane hasło: " . test_input($_POST["password"]);
     }
     ?>
     <form method="post">
