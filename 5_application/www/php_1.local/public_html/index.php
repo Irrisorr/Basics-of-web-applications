@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 
@@ -10,12 +11,12 @@
     <?php
     require "funkcje.php";
     echo "<h1>Nasz system</h1>";
-    if (isset($_POST["signin"])) {
-        echo "Przesłany login: " . test_input($_POST["login"]) . "<br>";
-        echo "Przesłane hasło: " . test_input($_POST["password"]);
-    }
+    // if (isset($_POST["signin"])) {
+    //     echo "Przesłany login: " . test_input($_POST["login"]) . "<br>";
+    //     echo "Przesłane hasło: " . test_input($_POST["password"]);
+    // }
     ?>
-    <form method="post">
+    <form action="logowanie.php" method="post">
         <label class="form_row">
             Login:
             <input type="text" name="login">

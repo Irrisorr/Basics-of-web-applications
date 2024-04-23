@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +9,8 @@
 
 <body>
     <?php
-    echo "<h1>Nasz system</h1>";
+    require_once("funkcje.php");
+    echo "Zalogowano";
     ?>
 </body>
 
