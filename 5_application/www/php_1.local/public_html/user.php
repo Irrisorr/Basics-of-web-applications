@@ -10,7 +10,11 @@
 <body>
     <?php
     require_once("funkcje.php");
-    echo "Zalogowano";
+    if (!isset($_SESSION['zalogowany']) or $_SESSION['zalogowany'] != 1) {
+        header("Location: index.php");
+    }
+    
+    echo "<h1>Witaj " . $_SESSION['zalogowanyImie'] . "!</h1>";
     ?>
 </body>
 

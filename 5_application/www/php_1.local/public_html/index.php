@@ -16,6 +16,7 @@
     //     echo "Przesłane hasło: " . test_input($_POST["password"]);
     // }
     ?>
+    
     <form action="logowanie.php" method="post">
         <label class="form_row">
             Login:
