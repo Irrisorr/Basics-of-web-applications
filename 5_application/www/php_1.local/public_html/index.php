@@ -10,13 +10,17 @@
 <body>
     <?php
     require "funkcje.php";
+    if (isset($_POST["logout"])) {
+        $_SESSION['zalogowanyImie'] = null;
+        $_SESSION['zalogowany'] = 0;
+    }
     echo "<h1>Nasz system</h1>";
     // if (isset($_POST["signin"])) {
     //     echo "Przesłany login: " . test_input($_POST["login"]) . "<br>";
     //     echo "Przesłane hasło: " . test_input($_POST["password"]);
     // }
     ?>
-    
+
     <form action="logowanie.php" method="post">
         <label class="form_row">
             Login:
