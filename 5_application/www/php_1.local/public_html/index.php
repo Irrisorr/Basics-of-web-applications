@@ -32,6 +32,26 @@
         </label><br>
         <input type="submit" name="signin" value="Zaloguj">
     </form>
+
+    <fieldset>
+    <legend>Informacje o cookie</legend>
+    <form action="cookie.php" method="get">
+        <label>
+            Czas życia ciasteczka:
+            <input type="number" name="czas" value="czas">
+        </label>
+        <input type="submit" name="utworzCookie" value="Utwórz cookie">
+    </form>
+
+    <h2> Ciasteczko</h2>
+    <?php
+    if (isset($_COOKIE['ciasteczko'])) {
+        echo "<p>Istnieje ciasteczko " . $_COOKIE['ciasteczko'] . "</p>";
+    } else {
+        echo "<p>Ciasteczka nie ma</p>";
+    }
+    ?>
+</fieldset>
 </body>
 
 </html>
