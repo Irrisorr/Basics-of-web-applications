@@ -9,7 +9,7 @@
 
 <body>
     <?php
-    echo "<h1>Nasz system hello</h1>";
+    echo "<h1>Nasz system </h1>";
 
     //    echo "<p>Przesłany login: " . $login . "<br>";
     //    echo "Przesłane hasło: " . $password . "</p>";
