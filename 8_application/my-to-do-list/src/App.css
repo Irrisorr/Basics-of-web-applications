@@ -1,0 +1,58 @@
+.App {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.todo-container {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid;
+}
+
+.hide-completed {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #2fac33;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.completed {
+  text-decoration: line-through;
+}
